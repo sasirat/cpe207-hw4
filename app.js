@@ -49,6 +49,8 @@ const server = http.createServer((req,res) => {
     }       
 })
 
-server.listen(7777,() =>{
+var PORT = process.env.PORT || 7777;
+
+server.listen(PORT,() =>{
     console.log('Server is runing ... ');
 })
